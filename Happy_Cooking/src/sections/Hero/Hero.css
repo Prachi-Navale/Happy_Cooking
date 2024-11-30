@@ -1,0 +1,64 @@
+.hero-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adds space between the input and button */
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+}
+
+.search-btn {
+  padding: 10px;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 100%;
+}
+
+.sliding-images {
+  display: flex;
+  width: 100%; /* Ensure it takes the full width of the container */
+  overflow: hidden; /* Hide overflowing images */
+  position: relative;
+  height: 80vh; /* Adjust the height as needed */
+}
+
+.sliding-images img {
+  min-width: 100%; /* Each image takes full width */
+  height: 100%; /* Adjust to container height */
+  object-fit: cover; /* Cover the container */
+  transition: transform 3s ease-in-out; /* Smooth transition */
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}

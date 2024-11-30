@@ -1,23 +1,21 @@
 .categories {
   padding: 3rem 2rem;
   text-align: center;
+  padding-top: 0;
 }
 
 .category-container {
   display: flex;
   justify-content:space-around;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-  gap: 4vw; /* Creates consistent spacing between cards */
   padding-top: 3vh;
 }
 
 .category {
   display: flex;
   flex-direction: column;
-  width: 20vw; /* Adjusted for consistent width */
+  width: 17vw; /* Adjusted for consistent width */
   height: 25vh; /* Adjusted for consistent height */
   border-radius: 0.5rem;
-  border: 1px solid black;
   transition: 0.3s ease; /* Smooth hover transition */
   overflow: hidden;
   background-color: #fff;
@@ -30,7 +28,7 @@
 
 .category img {
   width: 100%;
-  height: 83%; /* Adjusted to align with product card proportions */
+  height: 85%; /* Adjusted to align with product card proportions */
   object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners */
 }
@@ -41,7 +39,7 @@
   align-items: center;
   background-color: orange;
   color: white;
-  height: 17%; /* Ensures consistent title height */
+  height: 25%; /* Ensures consistent title height */
   margin: 0;
   font-size: 1.2rem;
   border-top: 1px solid grey;
